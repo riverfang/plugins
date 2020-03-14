@@ -1,0 +1,159 @@
+/**
+ *  分页样式(借鉴于jquery插件库一款分页插件样式)
+ *
+ * @author  fangjiang
+ */
+
+.page {
+  position: relative
+}
+
+.page .pagination {
+  height: 30px;
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+}
+
+.page .pagination .forbid-btn {
+  cursor: not-allowed !important;
+  color: #dcdcdc !important;
+  background-color: #fafafa !important;
+}
+
+.page .pagination,
+.page .pagination ul,
+.page .pagination ul li,
+.page .pagination .page-to input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.page .pagination ul {
+  float: left;
+  height: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.page .pagination ul li {
+  display: inline-block;
+  font-size: 14px;
+  min-width: 30px;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 28px;
+  margin-left: 10px;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  vertical-align: top
+}
+
+.page .pagination ul li:first-child {
+  margin-left: 0
+}
+
+.page .pagination ul li.current-page {
+  background-color: #248efb;
+  color: #fff;
+  border: 0;
+  line-height: 30px
+}
+
+.page .pagination ul li:hover {
+  background-color:#ffa8a8;
+  color: #fff
+}
+
+.page .pagination a.prev-page,
+.page .pagination a.next-page {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 30px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #666;
+  text-decoration: none
+}
+
+.page .pagination a.prev-page {
+  margin-right: 10px
+}
+
+.page .pagination a.next-page {
+  margin-left: 10px
+}
+
+.page .pagination a.prev-page:hover,
+.page .pagination a.next-page:hover {
+  background-color: #4596ce;
+  color: #fff
+}
+
+.page .pagination ul li.ellipsis {
+  background-color: transparent;
+  border: 0;
+  cursor: default;
+  line-height: 18px;
+  font-size: 20px
+}
+
+.page .pagination ul li.ellipsis:hover {
+  background-color: transparent;
+  border: 0;
+  cursor: default;
+  line-height: 18px;
+  font-size: 20px;
+  color: #666
+}
+
+.page .pagination .page-to {
+  width: 166px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-left: 20px
+}
+
+.page .pagination .page-to input {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  vertical-align: middle;
+  margin: 0 10px;
+  padding: 0 5px
+}
+
+.page .pagination .page-to input:focus {
+  outline: 0
+}
+
+.page .pagination .page-to span {
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  line-height: 28px;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  margin-left: 10px
+}
+
+.page .pagination .page-to span:hover {
+  background-color: #4596ce;
+  color: #fff
+}
