@@ -1,0 +1,8 @@
+## 获取配置事件处理器
+com.jet.ueditor.handler.AcquireConfigActionHander
+## 捕获远程图片事件处理器
+com.jet.ueditor.handler.CatchImageActionHandler
+## 文件管理事件处理器
+com.jet.ueditor.handler.ListFileActionHandler
+## 上传文件事件处理器
+com.jet.ueditor.handler.UploadActionHandler

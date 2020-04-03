@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: word2pdf
+  thymeleaf:
+    cache: false
+logging:
+  level:
+    root: info
