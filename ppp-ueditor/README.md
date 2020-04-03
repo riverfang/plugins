@@ -26,7 +26,7 @@ export default {
 - 修改文件上传请求路径，在VueUeditorWrap组件config文件夹的index.js修改serverUrl的地址
 其他UEditor的配置参数可以参考百度富文本框官网说明文档。
 
-##后端部署
+## 后端部署 ##
 - 将ppp-ueditor模块项目复制，如果jar在私服忽略该操作
 - 如果模块需要更改报名，请同步更改/META-INF/services文件的服务发现配置文件, 默认配置如下
 
