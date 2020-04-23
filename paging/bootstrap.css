@@ -1,0 +1,114 @@
+/**
+ * bootstrap 分页样式
+ *
+ * @author  fangjiang
+ */
+
+.page {
+  position: relative
+}
+
+.page .pagination,
+a:link{
+  color: #007bff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.page .pagination .forbid-btn {
+  cursor: not-allowed !important;
+  color: #dcdcdc !important;
+  background-color: #fafafa !important;
+  border-color: #ddd !important;
+}
+
+.page .pagination,
+.page .pagination ul,
+.page .pagination ul li,
+.page .pagination .page-to input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.page .pagination ul {
+  float: left;
+  height: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.page .pagination ul li {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.page .pagination ul li.current-page {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.page .pagination a.prev-page,
+.page .pagination a.next-page {
+  display: block;
+  float: left;
+  width: 45px;
+  background-color: #fafafa;
+  cursor: pointer;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.page .pagination ul li.ellipsis {
+  background-color: transparent !important;
+  border: 0;
+  line-height: 24px;
+  color: #007bff !important;
+}
+
+.page .pagination .page-to {
+  line-height: 24px;
+  float: left;
+  margin-left: 20px;
+}
+
+.page .pagination .page-to input {
+  display: inline-block;
+  width: 45px;
+  background-color: #fafafa;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+
+.page .pagination .page-to input:focus {
+  outline: 0;
+}
+
+.page .pagination .page-to span {
+  display: inline-block;
+  width: 40px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.page .pagination .page-to span,
+.page .pagination .page-to input,
+.page .pagination a.prev-page,
+.page .pagination a.next-page,
+.page .pagination ul li {
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+  line-height: 24px;
+}
+
+.page .pagination a.prev-page:hover,
+.page .pagination a.next-page:hover,
+.page .pagination .page-to span:hover,
+.page .pagination ul li:hover {
+  background-color: #007bff;
+  color: #fff
+}
