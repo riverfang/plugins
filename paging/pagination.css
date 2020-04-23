@@ -10,15 +10,16 @@
 
 .page .pagination {
   height: 30px;
-  color: #666;
+  color: #25bb9b;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .page .pagination .forbid-btn {
   cursor: not-allowed !important;
   color: #dcdcdc !important;
   background-color: #fafafa !important;
+  border-color: #ddd !important;
 }
 
 .page .pagination,
@@ -36,21 +37,19 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .page .pagination ul li {
   display: inline-block;
-  font-size: 14px;
   min-width: 30px;
   padding: 0 10px;
   height: 30px;
   line-height: 28px;
   margin-left: 10px;
-  background-color: #fafafa;
-  border: 1px solid #f0f0f0;
+  color: #25bb9b;
+  border: 1px solid #25bb9b;
   cursor: pointer;
   vertical-align: top
 }
@@ -60,14 +59,14 @@
 }
 
 .page .pagination ul li.current-page {
-  background-color: #248efb;
+  background-color: #25bb9b;
   color: #fff;
   border: 0;
   line-height: 30px
 }
 
 .page .pagination ul li:hover {
-  background-color:#ffa8a8;
+  background-color: #25bb9b;
   color: #fff
 }
 
@@ -75,15 +74,15 @@
 .page .pagination a.next-page {
   display: block;
   float: left;
-  width: 80px;
+  width: 60px;
   height: 30px;
   line-height: 28px;
   background-color: #fafafa;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #25bb9b;
   cursor: pointer;
   vertical-align: middle;
-  color: #666;
-  text-decoration: none
+  color: #25bb9b;
+  text-decoration: none;
 }
 
 .page .pagination a.prev-page {
@@ -96,29 +95,18 @@
 
 .page .pagination a.prev-page:hover,
 .page .pagination a.next-page:hover {
-  background-color: #4596ce;
+  background-color: #25bb9b;
   color: #fff
 }
 
 .page .pagination ul li.ellipsis {
   background-color: transparent;
   border: 0;
-  cursor: default;
   line-height: 18px;
-  font-size: 20px
-}
-
-.page .pagination ul li.ellipsis:hover {
-  background-color: transparent;
-  border: 0;
-  cursor: default;
-  line-height: 18px;
-  font-size: 20px;
-  color: #666
+  color: #25bb9b !important;
 }
 
 .page .pagination .page-to {
-  width: 166px;
   height: 30px;
   line-height: 30px;
   float: left;
@@ -127,11 +115,11 @@
 
 .page .pagination .page-to input {
   display: inline-block;
-  width: 40px;
+  width: 60px;
   height: 30px;
   line-height: 28px;
   background-color: #fafafa;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #25bb9b;
   vertical-align: middle;
   margin: 0 10px;
   padding: 0 5px
@@ -147,13 +135,12 @@
   width: 40px;
   height: 30px;
   line-height: 28px;
-  background-color: #fafafa;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #25bb9b;
   cursor: pointer;
   margin-left: 10px
 }
 
 .page .pagination .page-to span:hover {
-  background-color: #4596ce;
+  background-color: #25bb9b;
   color: #fff
 }

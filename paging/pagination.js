@@ -269,13 +269,10 @@
     // 监听每个页号的点击
     this.doms.pagesDom.addEventListener('click', function (event) {
       var target = event.target || event.srcElement;
-      if (target.tagName === 'LI') {
+      if (target.tagName === 'LI' && !target.classList.contains('ellipsis')) {
         var currentPageLi = context.container.querySelector('.current-page');
         var oldPageNum = parseInt(currentPageLi.innerText);
         var newPageNum = context.current = parseInt(target.innerText);
-        if (oldPageNum === newPageNum) {
-          return;
-        }
         // 如果点击目标元素是省略号前一个，证明当前需要向右前进
         // 如果直接点击最后一个元素则看做向右前进(特殊，需要从从最后一个往前计算，然后倒序输出)
         var isLast = (context.doms.ellipsisDom &&
@@ -284,14 +281,16 @@
         
         // 如果点击元素是页号容器内容的第一个子元素，证明需要向左后移动，
         // 但如果页号为1则已经到了左端尽头，可不必重新渲染
-        var isFirst = target === context.doms.pagesDom.firstChild
-            && newPageNum !== 1;
+        var isFirst = target === context.doms.pagesDom.firstChild;
         if (isLast || isFirst) {
           context.renderPages(isLast);
         } else {
           target.classList.add('current-page');
           currentPageLi.classList.remove('current-page');
           context.handleForbidBtns();
+        }
+		if (oldPageNum === newPageNum) {
+          return;
         }
         try {
           context.options.pageChange.call(context, newPageNum, oldPageNum);
